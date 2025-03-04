@@ -8,6 +8,11 @@
     <artifactId>burp-extension</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <url>https://github.com/orangebeard-io/burp-extension</url>
+    <name>Orangebeard.io Burp Extension</name>
+    <description>Burp Suite Pro Extension to report Audit Issues to Orangebeard</description>
+
+
     <developers>
         <developer>
             <name>Team Soju</name>
