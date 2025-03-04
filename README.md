@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://github.com/orangebeard-io/burp-extension">
-    <img src="https://raw.githubusercontent.com/orangebeard-io/burp-extension/master/.github/logo.svg" alt="Orangebeard.io Burp Suite Pro Extension" height="200">
+    <img src="https://raw.githubusercontent.com/orangebeard-io/burp-extension/main/.github/logo.svg" alt="Orangebeard.io Burp Suite Pro Extension" height="200">
   </a>
   <br>Orangebeard.io Burp Suite Pro Extension<br>
 </h1>
@@ -13,10 +13,10 @@
       alt="MVN Version" />
   </a>
   <a href="https://github.com/orangebeard-io/burp-extension/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/orangebeard-io/burp-extension/master.yml?branch=master&style=flat-square"
+    <img src="https://img.shields.io/github/actions/workflow/status/orangebeard-io/burp-extension/main.yml?branch=main&style=flat-square"
       alt="Build Status" />
   </a>
-  <a href="https://github.com/orangebeard-io/burp-extension/blob/master/LICENSE.txt">
+  <a href="https://github.com/orangebeard-io/burp-extension/blob/main/LICENSE.txt">
     <img src="https://img.shields.io/github/license/orangebeard-io/burp-extension?style=flat-square"
       alt="License" />
   </a>
