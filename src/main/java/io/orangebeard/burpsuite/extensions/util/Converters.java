@@ -20,16 +20,19 @@ public class Converters {
 
     private static final String KB_BASE_URL = "https://portswigger.net/kb/issues/";
 
-    private Converters(){}
+    private Converters() {
+    }
 
     public static Evidence toEvidence(HttpRequestResponse reqResp) {
         return new Evidence(
                 reqResp.request().url(),
                 reqResp.request().method(),
                 reqResp.response().statusCode(),
-                reqResp.request().headers().stream().collect(Collectors.toMap(HttpHeader::name, HttpHeader::value)),
+                reqResp.request().headers().stream()
+                        .collect(Collectors.toMap(HttpHeader::name, HttpHeader::value, (existingValue, newValue) -> newValue)),
                 reqResp.request().bodyToString().replace("\u0000", ""),
-                reqResp.response().headers().stream().collect(Collectors.toMap(HttpHeader::name, HttpHeader::value)),
+                reqResp.response().headers().stream()
+                        .collect(Collectors.toMap(HttpHeader::name, HttpHeader::value, (existingValue, newValue) -> newValue)),
                 reqResp.response().bodyToString().replace("\u0000", ""),
                 null
         );
