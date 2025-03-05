@@ -85,8 +85,7 @@ public class OrangebeardReporter implements BurpExtension {
                 ReportSecurityAlert alert = toReportSecurityAlert(alertRunUUID, url, auditIssue, evidence);
                 orangebeardClient.reportAlert(alert);
             } catch (Exception e) {
-                burpLogging.raiseErrorEvent("Failed to report issue to Orangebeard: " + e.getMessage());
-                System.err.println(e.getMessage());
+                burpLogging.raiseErrorEvent("Failed to report issue to Orangebeard: " + e.getClass().getSimpleName() + " - " + e.getMessage());
             }
         }
     }
