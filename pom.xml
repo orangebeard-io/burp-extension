@@ -194,7 +194,7 @@
                 <repository>
                     <id>github</id>
                     <name>GitHub OWNER Apache Maven Packages</name>
-                    <url>https://maven.pkg.github.com/orangebeard-io/java-client</url>
+                    <url>https://maven.pkg.github.com/orangebeard-io/burp-extension</url>
                 </repository>
             </distributionManagement>
         </profile>
